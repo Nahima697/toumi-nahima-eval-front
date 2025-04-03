@@ -1,0 +1,26 @@
+<div class="flex flex-col justify-center items-center border rounded-lg p-6 xl:p-20 text-center shadow-md w-full sm:w-[100%] md:w-[100%] lg:w-[350px] max-w-[100%]" [ngClass]="plan.style">
+  <h3 class="text-sm font-bold uppercase px-3 py-1 rounded-full border mb-3"
+  [ngClass]="plan.style === 'bg-teal-600 text-white' ? 'border-white text-white' : 'border-teal-600 text-teal-600'">
+    {{ plan.label }}
+  </h3>
+  <p class="text-3xl font-bold mb-2">{{ plan.price }}/mo</p>
+  <p class="text-gray-600 mb-2" [ngClass]="plan.style === 'bg-teal-600 text-white' ? 'border-white text-white' : 'border-teal-600 text-teal-600'">
+    {{ plan.description }}
+  </p>
+  <ul class="mt-4 text-left space-y-2">
+    <li *ngFor="let feature of plan.features" class="flex items-center gap-2">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" [ngClass]="plan.style === 'bg-teal-600 text-white' ? 'text-white' : 'text-teal-600'"
+        viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <circle cx="12" cy="12" r="10"></circle>
+        <path d="M9 12l2 2 4-4"></path>
+      </svg>
+      {{ feature }}
+    </li>
+  </ul>
+  <button class="mt-4 w-full px-6 py-3 bg-white text-teal-600 border border-teal-600 rounded-lg hover:bg-teal-600 hover:text-white active:bg-teal-800 flex items-center justify-center gap-2">
+    Démarrer
+    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 transform -rotate-45" viewBox="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M5 12h14M12 5l7 7-7 7"/>
+    </svg>
+  </button>
+</div>
