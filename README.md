@@ -57,3 +57,14 @@ Angular CLI does not come with an end-to-end testing framework by default. You c
 ## Additional Resources
 
 For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+
+## Projet Eval
+
+### Composants
+
+J'a créé plusieurs composant réutilisable pour ce projet notamment des cards: card, text-card, price card, que je réutilise dynamiquement dans un composant parent. Dans angular, on défini les données dynamique dans le fichier Ts du composant parent, par exemple card-list.component.ts, puis dans le fichier html on boucle dynamiquement les attributs avec ngfor le composant enfant permet juste de définir le style. 
+De même, j'ai utilisé Ngclass dans le tarif component ou je défini le style particulier dans mon tableau d'attribut dynamique, ngclass que j'utilise dans le composant price-card pour afficher dynamiquement le style.
+
+### Déploiement Vercel
+
+Je compte déployer sur Vercel.
