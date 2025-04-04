@@ -68,3 +68,4 @@ De même, j'ai utilisé Ngclass dans le tarif component ou je défini le style p
 ### Déploiement Vercel
 
 Je compte déployer sur Vercel.
+https://toumi-nahima-eval-front.vercel.app/home

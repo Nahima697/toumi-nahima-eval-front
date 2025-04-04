@@ -1,7 +1,9 @@
-<section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-y-10 gap-x-4 mt-20 mx-auto max-w-screen-2xl p-4 bg-gray-100 my-30">
-  <div class="flex flex-col space-y-10 border border-gray-200 rounded-lg">
-    <h2 class="font-family font-bold text-2xl p-2 text-gray-900"> Outils essentiels</h2>
-    <p class="text-gray-500">But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born..But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born....</p>
-  </div>
-  <app-text-card *ngFor="let card of cardTextData" [number]="card.number" [title]="card.title" [description]="card.description"></app-text-card>
-</section>
+<div class="flex justify-center items-center min-h-screen bg-gray-100 my-20">
+  <section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-y-10 gap-x-4 p-6 w-full lg:content-center mx-4 rounded-lg">
+    <div class="flex flex-col space-y-10 border border-gray-200 rounded-lg mx-auto">
+      <h2 class="font-family font-bold text-2xl p-2 text-gray-900">Outils essentiels</h2>
+      <p class="text-gray-500">But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born..But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born....</p>
+    </div>
+    <app-text-card *ngFor="let card of cardTextData" [number]="card.number" [title]="card.title" [description]="card.description"></app-text-card>
+  </section>
+</div>
